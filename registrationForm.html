@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Registration Form</title>
+    <head>
+        <style>
+            body {
+                font-family: 'Times New Roman', Times, serif;
+                background-color:pink;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2.5em;
+                font-family:Arial, Helvetica, sans-serif;
+                text-align: center;
+                color:black;
+            }
+
+            h2 {
+                text-align: center;
+                color:white;
+            }
+
+            form {
+                max-width: 500px;
+                margin: auto;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="password"] {
+                width: 90%;
+                padding: 10px;
+                margin: 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+
+            button {
+                width: 100%;
+                background-color:white;
+                color: black;
+            }
+
+            header {
+                button {
+                    width: 10%;
+                    background-color:white;
+                    color: black;
+                }
+            }
+
+        </style>
+
+    </head>
+    <header>
+        <button onclick="location.href='home.html'">⬅</button>
+        </header>
+    <body>
+        <h1>LearnYaar</h1>
+        <h2>Registration Form</h2>
+        <form >
+            First Name
+            <input type="text"><br><br>
+
+            Last Name
+            <input type="text"><br><br>
+
+            <table>
+                <tr>
+                  <td>Gender: </td>
+                  <td>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                  </td>
+                  <td>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                  </td>
+                  <td>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                  </td>
+                </tr>
+              </table><br><br>
+            Date of Birth
+            <input type="date"><br><br>
+
+            Email
+            <input type="email"><br><br>
+
+            Name of Institution
+            <input type="text"><br><br>
+
+            Password
+            <input type="password"><br><br>
+
+            Confirm Password
+            <input type="password"><br><br>
+            <button type="submit">Register</button>
+        </form>
+    </body>
